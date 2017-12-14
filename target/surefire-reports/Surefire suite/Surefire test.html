@@ -1,0 +1,224 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>29/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Dec 14 12:40:15 CET 2017</td>
+</tr>
+<tr><td>Total time:</td><td>5 seconds (5563 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.example.maven.calculator_mirunal_cornelial.SimpleCalculatorTest.testAddMethod()'><b>testAddMethod</b><br>Test class: com.example.maven.calculator_mirunal_cornelial.SimpleCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testAddMethod(com.example.maven.calculator_mirunal_cornelial.SimpleCalculatorTest)</td></tr>
+<tr>
+<td title='com.example.maven.calculator_mirunal_cornelial.SimpleCalculatorTest.testAddNegativeMethod()'><b>testAddNegativeMethod</b><br>Test class: com.example.maven.calculator_mirunal_cornelial.SimpleCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testAddNegativeMethod(com.example.maven.calculator_mirunal_cornelial.SimpleCalculatorTest)</td></tr>
+<tr>
+<td title='com.example.maven.calculator_mirunal_cornelial.SimpleCalculatorTest.testAddWithZero()'><b>testAddWithZero</b><br>Test class: com.example.maven.calculator_mirunal_cornelial.SimpleCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testAddWithZero(com.example.maven.calculator_mirunal_cornelial.SimpleCalculatorTest)</td></tr>
+<tr>
+<td title='com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest.testCubeRoot()'><b>testCubeRoot</b><br>Test class: com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testCubeRoot(com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest)</td></tr>
+<tr>
+<td title='com.example.maven.calculator_mirunal_cornelial.SimpleCalculatorTest.testDivideByZero()'><b>testDivideByZero</b><br>Test class: com.example.maven.calculator_mirunal_cornelial.SimpleCalculatorTest</td>
+<td></td>
+<td>1</td>
+<td>testDivideByZero(com.example.maven.calculator_mirunal_cornelial.SimpleCalculatorTest)</td></tr>
+<tr>
+<td title='com.example.maven.calculator_mirunal_cornelial.SimpleCalculatorTest.testDivideMethod()'><b>testDivideMethod</b><br>Test class: com.example.maven.calculator_mirunal_cornelial.SimpleCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testDivideMethod(com.example.maven.calculator_mirunal_cornelial.SimpleCalculatorTest)</td></tr>
+<tr>
+<td title='com.example.maven.calculator_mirunal_cornelial.SimpleCalculatorTest.testDivideNegativeMethod()'><b>testDivideNegativeMethod</b><br>Test class: com.example.maven.calculator_mirunal_cornelial.SimpleCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testDivideNegativeMethod(com.example.maven.calculator_mirunal_cornelial.SimpleCalculatorTest)</td></tr>
+<tr>
+<td title='com.example.maven.calculator_mirunal_cornelial.SimpleCalculatorTest.testMultiplyMethod()'><b>testMultiplyMethod</b><br>Test class: com.example.maven.calculator_mirunal_cornelial.SimpleCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testMultiplyMethod(com.example.maven.calculator_mirunal_cornelial.SimpleCalculatorTest)</td></tr>
+<tr>
+<td title='com.example.maven.calculator_mirunal_cornelial.SimpleCalculatorTest.testMultiplyNegativeMethod()'><b>testMultiplyNegativeMethod</b><br>Test class: com.example.maven.calculator_mirunal_cornelial.SimpleCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testMultiplyNegativeMethod(com.example.maven.calculator_mirunal_cornelial.SimpleCalculatorTest)</td></tr>
+<tr>
+<td title='com.example.maven.calculator_mirunal_cornelial.SimpleCalculatorTest.testMultiplyWithZero()'><b>testMultiplyWithZero</b><br>Test class: com.example.maven.calculator_mirunal_cornelial.SimpleCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testMultiplyWithZero(com.example.maven.calculator_mirunal_cornelial.SimpleCalculatorTest)</td></tr>
+<tr>
+<td title='com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest.testNegativeCubeRoot()'><b>testNegativeCubeRoot</b><br>Test class: com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testNegativeCubeRoot(com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest)</td></tr>
+<tr>
+<td title='com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest.testNegativeRaiseToThePowerOf2()'><b>testNegativeRaiseToThePowerOf2</b><br>Test class: com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testNegativeRaiseToThePowerOf2(com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest)</td></tr>
+<tr>
+<td title='com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest.testNegativeRaiseToThePowerOf3()'><b>testNegativeRaiseToThePowerOf3</b><br>Test class: com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testNegativeRaiseToThePowerOf3(com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest)</td></tr>
+<tr>
+<td title='com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest.testNegativeRaiseToThePowerOf4()'><b>testNegativeRaiseToThePowerOf4</b><br>Test class: com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testNegativeRaiseToThePowerOf4(com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest)</td></tr>
+<tr>
+<td title='com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest.testNegativeRemainder()'><b>testNegativeRemainder</b><br>Test class: com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testNegativeRemainder(com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest)</td></tr>
+<tr>
+<td title='com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest.testNegativeSquareRoot()'><b>testNegativeSquareRoot</b><br>Test class: com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testNegativeSquareRoot(com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest)</td></tr>
+<tr>
+<td title='com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest.testRaiseToThePowerOf2()'><b>testRaiseToThePowerOf2</b><br>Test class: com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testRaiseToThePowerOf2(com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest)</td></tr>
+<tr>
+<td title='com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest.testRaiseToThePowerOf3()'><b>testRaiseToThePowerOf3</b><br>Test class: com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testRaiseToThePowerOf3(com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest)</td></tr>
+<tr>
+<td title='com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest.testRaiseToThePowerOf4()'><b>testRaiseToThePowerOf4</b><br>Test class: com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testRaiseToThePowerOf4(com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest)</td></tr>
+<tr>
+<td title='com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest.testRemainder()'><b>testRemainder</b><br>Test class: com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testRemainder(com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest)</td></tr>
+<tr>
+<td title='com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest.testSquareRoot()'><b>testSquareRoot</b><br>Test class: com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testSquareRoot(com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest)</td></tr>
+<tr>
+<td title='com.example.maven.calculator_mirunal_cornelial.SimpleCalculatorTest.testSubtractMethod()'><b>testSubtractMethod</b><br>Test class: com.example.maven.calculator_mirunal_cornelial.SimpleCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testSubtractMethod(com.example.maven.calculator_mirunal_cornelial.SimpleCalculatorTest)</td></tr>
+<tr>
+<td title='com.example.maven.calculator_mirunal_cornelial.SimpleCalculatorTest.testSubtractNegativeMethod()'><b>testSubtractNegativeMethod</b><br>Test class: com.example.maven.calculator_mirunal_cornelial.SimpleCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testSubtractNegativeMethod(com.example.maven.calculator_mirunal_cornelial.SimpleCalculatorTest)</td></tr>
+<tr>
+<td title='com.example.maven.calculator_mirunal_cornelial.SimpleCalculatorTest.testSubtractWithZero()'><b>testSubtractWithZero</b><br>Test class: com.example.maven.calculator_mirunal_cornelial.SimpleCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testSubtractWithZero(com.example.maven.calculator_mirunal_cornelial.SimpleCalculatorTest)</td></tr>
+<tr>
+<td title='com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest.testZeroCubeRoot()'><b>testZeroCubeRoot</b><br>Test class: com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testZeroCubeRoot(com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest)</td></tr>
+<tr>
+<td title='com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest.testZeroRaiseToThePowerOf2()'><b>testZeroRaiseToThePowerOf2</b><br>Test class: com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testZeroRaiseToThePowerOf2(com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest)</td></tr>
+<tr>
+<td title='com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest.testZeroRaiseToThePowerOf3()'><b>testZeroRaiseToThePowerOf3</b><br>Test class: com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testZeroRaiseToThePowerOf3(com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest)</td></tr>
+<tr>
+<td title='com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest.testZeroRaiseToThePowerOf4()'><b>testZeroRaiseToThePowerOf4</b><br>Test class: com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testZeroRaiseToThePowerOf4(com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest)</td></tr>
+<tr>
+<td title='com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest.testZeroSquareRoot()'><b>testZeroSquareRoot</b><br>Test class: com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testZeroSquareRoot(com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest)</td></tr>
+</table><p>
+</body>
+</html>

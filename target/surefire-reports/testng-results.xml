@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="29" passed="29">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="5563" started-at="2017-12-14T11:40:15Z" finished-at="2017-12-14T11:40:20Z">
+    <groups>
+    </groups>
+    <test name="Surefire test" duration-ms="5563" started-at="2017-12-14T11:40:15Z" finished-at="2017-12-14T11:40:20Z">
+      <class name="com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest">
+        <test-method status="PASS" signature="testZeroCubeRoot()[pri:0, instance:testZeroCubeRoot(com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest)]" name="testZeroCubeRoot" duration-ms="190" started-at="2017-12-14T12:40:19Z" finished-at="2017-12-14T12:40:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testZeroCubeRoot -->
+        <test-method status="PASS" signature="testNegativeRemainder()[pri:0, instance:testNegativeRemainder(com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest)]" name="testNegativeRemainder" duration-ms="4" started-at="2017-12-14T12:40:20Z" finished-at="2017-12-14T12:40:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNegativeRemainder -->
+        <test-method status="PASS" signature="testNegativeRaiseToThePowerOf2()[pri:0, instance:testNegativeRaiseToThePowerOf2(com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest)]" name="testNegativeRaiseToThePowerOf2" duration-ms="6" started-at="2017-12-14T12:40:20Z" finished-at="2017-12-14T12:40:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNegativeRaiseToThePowerOf2 -->
+        <test-method status="PASS" signature="testNegativeRaiseToThePowerOf3()[pri:0, instance:testNegativeRaiseToThePowerOf3(com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest)]" name="testNegativeRaiseToThePowerOf3" duration-ms="173" started-at="2017-12-14T12:40:20Z" finished-at="2017-12-14T12:40:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNegativeRaiseToThePowerOf3 -->
+        <test-method status="PASS" signature="testNegativeRaiseToThePowerOf4()[pri:0, instance:testNegativeRaiseToThePowerOf4(com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest)]" name="testNegativeRaiseToThePowerOf4" duration-ms="6" started-at="2017-12-14T12:40:20Z" finished-at="2017-12-14T12:40:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNegativeRaiseToThePowerOf4 -->
+        <test-method status="PASS" signature="testNegativeCubeRoot()[pri:0, instance:testNegativeCubeRoot(com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest)]" name="testNegativeCubeRoot" duration-ms="16" started-at="2017-12-14T12:40:20Z" finished-at="2017-12-14T12:40:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNegativeCubeRoot -->
+        <test-method status="PASS" signature="testRaiseToThePowerOf2()[pri:0, instance:testRaiseToThePowerOf2(com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest)]" name="testRaiseToThePowerOf2" duration-ms="12" started-at="2017-12-14T12:40:20Z" finished-at="2017-12-14T12:40:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRaiseToThePowerOf2 -->
+        <test-method status="PASS" signature="testRaiseToThePowerOf3()[pri:0, instance:testRaiseToThePowerOf3(com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest)]" name="testRaiseToThePowerOf3" duration-ms="63" started-at="2017-12-14T12:40:20Z" finished-at="2017-12-14T12:40:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRaiseToThePowerOf3 -->
+        <test-method status="PASS" signature="testRaiseToThePowerOf4()[pri:0, instance:testRaiseToThePowerOf4(com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest)]" name="testRaiseToThePowerOf4" duration-ms="3" started-at="2017-12-14T12:40:20Z" finished-at="2017-12-14T12:40:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRaiseToThePowerOf4 -->
+        <test-method status="PASS" signature="testNegativeSquareRoot()[pri:0, instance:testNegativeSquareRoot(com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest)]" name="testNegativeSquareRoot" duration-ms="22" started-at="2017-12-14T12:40:20Z" finished-at="2017-12-14T12:40:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNegativeSquareRoot -->
+        <test-method status="PASS" signature="testCubeRoot()[pri:0, instance:testCubeRoot(com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest)]" name="testCubeRoot" duration-ms="76" started-at="2017-12-14T12:40:20Z" finished-at="2017-12-14T12:40:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCubeRoot -->
+        <test-method status="PASS" signature="testSquareRoot()[pri:0, instance:testSquareRoot(com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest)]" name="testSquareRoot" duration-ms="9" started-at="2017-12-14T12:40:20Z" finished-at="2017-12-14T12:40:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSquareRoot -->
+        <test-method status="PASS" signature="testZeroRaiseToThePowerOf2()[pri:0, instance:testZeroRaiseToThePowerOf2(com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest)]" name="testZeroRaiseToThePowerOf2" duration-ms="81" started-at="2017-12-14T12:40:20Z" finished-at="2017-12-14T12:40:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testZeroRaiseToThePowerOf2 -->
+        <test-method status="PASS" signature="testZeroRaiseToThePowerOf3()[pri:0, instance:testZeroRaiseToThePowerOf3(com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest)]" name="testZeroRaiseToThePowerOf3" duration-ms="19" started-at="2017-12-14T12:40:20Z" finished-at="2017-12-14T12:40:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testZeroRaiseToThePowerOf3 -->
+        <test-method status="PASS" signature="testZeroRaiseToThePowerOf4()[pri:0, instance:testZeroRaiseToThePowerOf4(com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest)]" name="testZeroRaiseToThePowerOf4" duration-ms="3" started-at="2017-12-14T12:40:20Z" finished-at="2017-12-14T12:40:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testZeroRaiseToThePowerOf4 -->
+        <test-method status="PASS" signature="testRemainder()[pri:0, instance:testRemainder(com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest)]" name="testRemainder" duration-ms="6" started-at="2017-12-14T12:40:20Z" finished-at="2017-12-14T12:40:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRemainder -->
+        <test-method status="PASS" signature="testZeroSquareRoot()[pri:0, instance:testZeroSquareRoot(com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest)]" name="testZeroSquareRoot" duration-ms="285" started-at="2017-12-14T12:40:20Z" finished-at="2017-12-14T12:40:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testZeroSquareRoot -->
+      </class> <!-- com.example.maven.calculator_mirunal_cornelial.AdvancedCalculatorTest -->
+      <class name="com.example.maven.calculator_mirunal_cornelial.SimpleCalculatorTest">
+        <test-method status="PASS" signature="testDivideByZero()[pri:0, instance:testDivideByZero(com.example.maven.calculator_mirunal_cornelial.SimpleCalculatorTest)]" name="testDivideByZero" duration-ms="1382" started-at="2017-12-14T12:40:15Z" finished-at="2017-12-14T12:40:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDivideByZero -->
+        <test-method status="PASS" signature="testDivideMethod()[pri:0, instance:testDivideMethod(com.example.maven.calculator_mirunal_cornelial.SimpleCalculatorTest)]" name="testDivideMethod" duration-ms="95" started-at="2017-12-14T12:40:17Z" finished-at="2017-12-14T12:40:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDivideMethod -->
+        <test-method status="PASS" signature="testMultiplyNegativeMethod()[pri:0, instance:testMultiplyNegativeMethod(com.example.maven.calculator_mirunal_cornelial.SimpleCalculatorTest)]" name="testMultiplyNegativeMethod" duration-ms="16" started-at="2017-12-14T12:40:17Z" finished-at="2017-12-14T12:40:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultiplyNegativeMethod -->
+        <test-method status="PASS" signature="testDivideNegativeMethod()[pri:0, instance:testDivideNegativeMethod(com.example.maven.calculator_mirunal_cornelial.SimpleCalculatorTest)]" name="testDivideNegativeMethod" duration-ms="88" started-at="2017-12-14T12:40:17Z" finished-at="2017-12-14T12:40:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDivideNegativeMethod -->
+        <test-method status="PASS" signature="testSubtractWithZero()[pri:0, instance:testSubtractWithZero(com.example.maven.calculator_mirunal_cornelial.SimpleCalculatorTest)]" name="testSubtractWithZero" duration-ms="743" started-at="2017-12-14T12:40:17Z" finished-at="2017-12-14T12:40:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSubtractWithZero -->
+        <test-method status="PASS" signature="testMultiplyMethod()[pri:0, instance:testMultiplyMethod(com.example.maven.calculator_mirunal_cornelial.SimpleCalculatorTest)]" name="testMultiplyMethod" duration-ms="96" started-at="2017-12-14T12:40:18Z" finished-at="2017-12-14T12:40:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultiplyMethod -->
+        <test-method status="PASS" signature="testAddMethod()[pri:0, instance:testAddMethod(com.example.maven.calculator_mirunal_cornelial.SimpleCalculatorTest)]" name="testAddMethod" duration-ms="5" started-at="2017-12-14T12:40:18Z" finished-at="2017-12-14T12:40:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddMethod -->
+        <test-method status="PASS" signature="testSubtractMethod()[pri:0, instance:testSubtractMethod(com.example.maven.calculator_mirunal_cornelial.SimpleCalculatorTest)]" name="testSubtractMethod" duration-ms="86" started-at="2017-12-14T12:40:18Z" finished-at="2017-12-14T12:40:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSubtractMethod -->
+        <test-method status="PASS" signature="testSubtractNegativeMethod()[pri:0, instance:testSubtractNegativeMethod(com.example.maven.calculator_mirunal_cornelial.SimpleCalculatorTest)]" name="testSubtractNegativeMethod" duration-ms="42" started-at="2017-12-14T12:40:18Z" finished-at="2017-12-14T12:40:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSubtractNegativeMethod -->
+        <test-method status="PASS" signature="testAddWithZero()[pri:0, instance:testAddWithZero(com.example.maven.calculator_mirunal_cornelial.SimpleCalculatorTest)]" name="testAddWithZero" duration-ms="691" started-at="2017-12-14T12:40:18Z" finished-at="2017-12-14T12:40:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddWithZero -->
+        <test-method status="PASS" signature="testMultiplyWithZero()[pri:0, instance:testMultiplyWithZero(com.example.maven.calculator_mirunal_cornelial.SimpleCalculatorTest)]" name="testMultiplyWithZero" duration-ms="541" started-at="2017-12-14T12:40:19Z" finished-at="2017-12-14T12:40:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultiplyWithZero -->
+        <test-method status="PASS" signature="testAddNegativeMethod()[pri:0, instance:testAddNegativeMethod(com.example.maven.calculator_mirunal_cornelial.SimpleCalculatorTest)]" name="testAddNegativeMethod" duration-ms="80" started-at="2017-12-14T12:40:19Z" finished-at="2017-12-14T12:40:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddNegativeMethod -->
+      </class> <!-- com.example.maven.calculator_mirunal_cornelial.SimpleCalculatorTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

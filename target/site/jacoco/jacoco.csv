@@ -1,0 +1,16 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+calculator-mirunal-cornelial,com.example.maven.calculator_mirunal_cornelial,MainFrame.new ActionListener() {...},50,0,0,0,8,0,2,0,2,0
+calculator-mirunal-cornelial,com.example.maven.calculator_mirunal_cornelial,MainFrame.new ActionListener() {...},50,0,0,0,8,0,2,0,2,0
+calculator-mirunal-cornelial,com.example.maven.calculator_mirunal_cornelial,MainFrame.new Runnable() {...},16,0,0,0,7,0,2,0,2,0
+calculator-mirunal-cornelial,com.example.maven.calculator_mirunal_cornelial,MainFrame.new ActionListener() {...},7,0,0,0,2,0,2,0,2,0
+calculator-mirunal-cornelial,com.example.maven.calculator_mirunal_cornelial,SimpleCalculator,0,25,0,2,0,7,0,6,0,5
+calculator-mirunal-cornelial,com.example.maven.calculator_mirunal_cornelial,MainFrame,383,0,0,0,71,0,3,0,3,0
+calculator-mirunal-cornelial,com.example.maven.calculator_mirunal_cornelial,MainFrame.new ActionListener() {...},50,0,0,0,8,0,2,0,2,0
+calculator-mirunal-cornelial,com.example.maven.calculator_mirunal_cornelial,AdvancedCalculator,0,25,0,0,0,7,0,7,0,7
+calculator-mirunal-cornelial,com.example.maven.calculator_mirunal_cornelial,MainFrame.new ActionListener() {...},42,0,0,0,7,0,2,0,2,0
+calculator-mirunal-cornelial,com.example.maven.calculator_mirunal_cornelial,MainFrame.new ActionListener() {...},42,0,0,0,7,0,2,0,2,0
+calculator-mirunal-cornelial,com.example.maven.calculator_mirunal_cornelial,MainFrame.new ActionListener() {...},42,0,0,0,7,0,2,0,2,0
+calculator-mirunal-cornelial,com.example.maven.calculator_mirunal_cornelial,MainFrame.new ActionListener() {...},42,0,0,0,7,0,2,0,2,0
+calculator-mirunal-cornelial,com.example.maven.calculator_mirunal_cornelial,MainFrame.new ActionListener() {...},50,0,0,0,8,0,2,0,2,0
+calculator-mirunal-cornelial,com.example.maven.calculator_mirunal_cornelial,MainFrame.new ActionListener() {...},50,0,0,0,8,0,2,0,2,0
+calculator-mirunal-cornelial,com.example.maven.calculator_mirunal_cornelial,MainFrame.new ActionListener() {...},42,0,0,0,7,0,2,0,2,0

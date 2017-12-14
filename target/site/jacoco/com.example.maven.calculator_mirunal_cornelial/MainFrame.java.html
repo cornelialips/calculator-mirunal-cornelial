@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>MainFrame.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">calculator-mirunal-cornelial</a> &gt; <a href="index.source.html" class="el_package">com.example.maven.calculator_mirunal_cornelial</a> &gt; <span class="el_source">MainFrame.java</span></div><h1>MainFrame.java</h1><pre class="source lang-java linenums">package com.example.maven.calculator_mirunal_cornelial;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JTextField;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import javax.swing.event.AncestorListener;
+import javax.swing.event.AncestorEvent;
+
+public class MainFrame {
+
+	private JFrame frmCalculator;
+	private JTextField textfield1;
+	private JTextField textfield2;
+<span class="nc" id="L20">	JLabel lblResult = new JLabel(&quot;Result: &quot;);</span>
+	
+<span class="nc" id="L22">	SimpleCalculator c = new SimpleCalculator();</span>
+<span class="nc" id="L23">	AdvancedCalculator ca = new AdvancedCalculator();</span>
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+<span class="nc" id="L29">		EventQueue.invokeLater(new Runnable() {</span>
+			public void run() {
+				try {
+<span class="nc" id="L32">					MainFrame window = new MainFrame();</span>
+<span class="nc" id="L33">					window.frmCalculator.setVisible(true);</span>
+<span class="nc" id="L34">				} catch (Exception e) {</span>
+<span class="nc" id="L35">					e.printStackTrace();</span>
+<span class="nc" id="L36">				}</span>
+<span class="nc" id="L37">			}</span>
+		});
+<span class="nc" id="L39">	}</span>
+	
+	/**
+	 * Create the application.
+	 */
+<span class="nc" id="L44">	public MainFrame() {</span>
+<span class="nc" id="L45">		initialize();</span>
+<span class="nc" id="L46">	}</span>
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+<span class="nc" id="L52">		frmCalculator = new JFrame();</span>
+<span class="nc" id="L53">		frmCalculator.setTitle(&quot;Calculator&quot;);</span>
+<span class="nc" id="L54">		frmCalculator.setBounds(100, 100, 756, 621);</span>
+<span class="nc" id="L55">		frmCalculator.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);</span>
+<span class="nc" id="L56">		frmCalculator.getContentPane().setLayout(null);</span>
+		
+		
+		
+<span class="nc" id="L60">		JLabel lblFirstNumber = new JLabel(&quot;first number&quot;);</span>
+<span class="nc" id="L61">		lblFirstNumber.setBounds(12, 25, 112, 15);</span>
+<span class="nc" id="L62">		frmCalculator.getContentPane().add(lblFirstNumber);</span>
+		
+<span class="nc" id="L64">		JLabel lblSecondNumber = new JLabel(&quot;second number&quot;);</span>
+<span class="nc" id="L65">		lblSecondNumber.setBounds(12, 63, 112, 15);</span>
+<span class="nc" id="L66">		frmCalculator.getContentPane().add(lblSecondNumber);</span>
+		
+		
+		
+	
+<span class="nc" id="L71">		lblResult.setBounds(12, 112, 326, 15);</span>
+<span class="nc" id="L72">		frmCalculator.getContentPane().add(lblResult);</span>
+		
+<span class="nc" id="L74">		textfield1 = new JTextField();</span>
+<span class="nc" id="L75">		textfield1.addActionListener(new ActionListener() {</span>
+			public void actionPerformed(ActionEvent e) {
+<span class="nc" id="L77">			}</span>
+		});
+<span class="nc" id="L79">		textfield1.setBounds(166, 23, 114, 19);</span>
+<span class="nc" id="L80">		frmCalculator.getContentPane().add(textfield1);</span>
+<span class="nc" id="L81">		textfield1.setColumns(10);</span>
+		
+<span class="nc" id="L83">		textfield2 = new JTextField();</span>
+<span class="nc" id="L84">		textfield2.setBounds(166, 61, 114, 19);</span>
+<span class="nc" id="L85">		frmCalculator.getContentPane().add(textfield2);</span>
+<span class="nc" id="L86">		textfield2.setColumns(10);</span>
+		
+		/**
+		 * get the numbers from the textfields
+		 *  call the method addition from basic calculator
+		 *update the label result
+		 */
+	
+		
+<span class="nc" id="L95">		JButton btnAddition = new JButton(&quot;+&quot;);</span>
+<span class="nc" id="L96">		btnAddition.addActionListener(new ActionListener() {</span>
+			public void actionPerformed(ActionEvent e) {
+				
+<span class="nc" id="L99">				double firstNumber = Double.parseDouble(textfield1.getText().toString());</span>
+<span class="nc" id="L100">				double secondNumber = Double.parseDouble(textfield2.getText().toString());</span>
+<span class="nc" id="L101">				double result = c.addition(firstNumber, secondNumber);</span>
+				
+<span class="nc" id="L103">				lblResult.setText(&quot;Result: &quot;+result);</span>
+<span class="nc" id="L104">				textfield1.setText(&quot;&quot;);</span>
+<span class="nc" id="L105">				textfield2.setText(&quot;&quot;);</span>
+				
+			
+				
+<span class="nc" id="L109">			}</span>
+		});
+<span class="nc" id="L111">		btnAddition.setBounds(7, 150, 117, 25);</span>
+<span class="nc" id="L112">		frmCalculator.getContentPane().add(btnAddition);</span>
+		
+<span class="nc" id="L114">		JButton btnSubtraction = new JButton(&quot;-&quot;);</span>
+<span class="nc" id="L115">		btnSubtraction.addActionListener(new ActionListener() {</span>
+			public void actionPerformed(ActionEvent e) {
+<span class="nc" id="L117">				double firstNumber = Double.parseDouble(textfield1.getText().toString());</span>
+<span class="nc" id="L118">				double secondNumber = Double.parseDouble(textfield2.getText().toString());</span>
+<span class="nc" id="L119">				double result = c.subtraction(firstNumber, secondNumber);</span>
+				
+<span class="nc" id="L121">				lblResult.setText(&quot;Result: &quot;+result);</span>
+<span class="nc" id="L122">				textfield1.setText(&quot;&quot;);</span>
+<span class="nc" id="L123">				textfield2.setText(&quot;&quot;);</span>
+<span class="nc" id="L124">			}</span>
+		});
+<span class="nc" id="L126">		btnSubtraction.setBounds(7, 187, 117, 25);</span>
+<span class="nc" id="L127">		frmCalculator.getContentPane().add(btnSubtraction);</span>
+		
+<span class="nc" id="L129">		JButton btnMultiplication = new JButton(&quot;*&quot;);</span>
+<span class="nc" id="L130">		btnMultiplication.addActionListener(new ActionListener() {</span>
+			public void actionPerformed(ActionEvent e) {
+<span class="nc" id="L132">				double firstNumber = Double.parseDouble(textfield1.getText().toString());</span>
+<span class="nc" id="L133">				double secondNumber = Double.parseDouble(textfield2.getText().toString());</span>
+<span class="nc" id="L134">				double result = c.multiplication(firstNumber, secondNumber);</span>
+				
+<span class="nc" id="L136">				lblResult.setText(&quot;Result: &quot;+result);</span>
+<span class="nc" id="L137">				textfield1.setText(&quot;&quot;);</span>
+<span class="nc" id="L138">				textfield2.setText(&quot;&quot;);</span>
+<span class="nc" id="L139">			}</span>
+		});
+<span class="nc" id="L141">		btnMultiplication.setBounds(7, 224, 117, 25);</span>
+<span class="nc" id="L142">		frmCalculator.getContentPane().add(btnMultiplication);</span>
+		
+<span class="nc" id="L144">		JButton btnDivision = new JButton(&quot;/&quot;);</span>
+<span class="nc" id="L145">		btnDivision.addActionListener(new ActionListener() {</span>
+			public void actionPerformed(ActionEvent e) {
+<span class="nc" id="L147">				double firstNumber = Double.parseDouble(textfield1.getText().toString());</span>
+<span class="nc" id="L148">				double secondNumber = Double.parseDouble(textfield2.getText().toString());</span>
+<span class="nc" id="L149">				double result = c.division(firstNumber, secondNumber);</span>
+				
+<span class="nc" id="L151">				lblResult.setText(&quot;Result: &quot;+result);</span>
+<span class="nc" id="L152">				textfield1.setText(&quot;&quot;);</span>
+<span class="nc" id="L153">				textfield2.setText(&quot;&quot;);</span>
+<span class="nc" id="L154">			}</span>
+		});
+<span class="nc" id="L156">		btnDivision.setBounds(7, 261, 117, 25);</span>
+<span class="nc" id="L157">		frmCalculator.getContentPane().add(btnDivision);</span>
+		
+<span class="nc" id="L159">		JButton btnRaised2 = new JButton(&quot;x2&quot;);</span>
+<span class="nc" id="L160">		btnRaised2.addActionListener(new ActionListener() {</span>
+			public void actionPerformed(ActionEvent e) {
+<span class="nc" id="L162">				double firstNumber = Double.parseDouble(textfield1.getText().toString());</span>
+<span class="nc" id="L163">				double result = ca.raisedToThePowerOf2(firstNumber);</span>
+			
+<span class="nc" id="L165">				lblResult.setText(&quot;Result: &quot;+result);</span>
+<span class="nc" id="L166">				textfield1.setText(&quot;&quot;);</span>
+<span class="nc" id="L167">				textfield2.setText(&quot;&quot;);</span>
+<span class="nc" id="L168">			}</span>
+		});
+<span class="nc" id="L170">		btnRaised2.setBounds(7, 298, 117, 25);</span>
+<span class="nc" id="L171">		frmCalculator.getContentPane().add(btnRaised2);</span>
+		
+<span class="nc" id="L173">		JButton btnRaised3 = new JButton(&quot;x3&quot;);</span>
+<span class="nc" id="L174">		btnRaised3.addActionListener(new ActionListener() {</span>
+			public void actionPerformed(ActionEvent e) {
+<span class="nc" id="L176">				double firstNumber = Double.parseDouble(textfield1.getText().toString());</span>
+<span class="nc" id="L177">				double result = ca.raisedToThePowerOf3(firstNumber);</span>
+				
+<span class="nc" id="L179">				lblResult.setText(&quot;Result: &quot;+result);</span>
+<span class="nc" id="L180">				textfield1.setText(&quot;&quot;);</span>
+<span class="nc" id="L181">				textfield2.setText(&quot;&quot;);</span>
+<span class="nc" id="L182">			}</span>
+		});
+<span class="nc" id="L184">		btnRaised3.setBounds(228, 150, 117, 25);</span>
+<span class="nc" id="L185">		frmCalculator.getContentPane().add(btnRaised3);</span>
+		
+<span class="nc" id="L187">		JButton btnRaised4 = new JButton(&quot;x4&quot;);</span>
+<span class="nc" id="L188">		btnRaised4.addActionListener(new ActionListener() {</span>
+			public void actionPerformed(ActionEvent e) {
+<span class="nc" id="L190">				double firstNumber = Double.parseDouble(textfield1.getText().toString());</span>
+<span class="nc" id="L191">				double result = ca.raisedToThePowerOf4(firstNumber);</span>
+				
+<span class="nc" id="L193">				lblResult.setText(&quot;Result: &quot;+result);</span>
+<span class="nc" id="L194">				textfield1.setText(&quot;&quot;);</span>
+<span class="nc" id="L195">				textfield2.setText(&quot;&quot;);</span>
+<span class="nc" id="L196">			}</span>
+		});
+<span class="nc" id="L198">		btnRaised4.setBounds(228, 187, 117, 25);</span>
+<span class="nc" id="L199">		frmCalculator.getContentPane().add(btnRaised4);</span>
+		
+<span class="nc" id="L201">		JButton btnRemainder = new JButton(&quot;%&quot;);</span>
+<span class="nc" id="L202">		btnRemainder.addActionListener(new ActionListener() {</span>
+			public void actionPerformed(ActionEvent e) {
+<span class="nc" id="L204">				double firstNumber = Double.parseDouble(textfield1.getText().toString());</span>
+<span class="nc" id="L205">				double secondNumber = Double.parseDouble(textfield2.getText().toString());</span>
+<span class="nc" id="L206">				double result = ca.remainder(firstNumber, secondNumber);</span>
+				
+<span class="nc" id="L208">				lblResult.setText(&quot;Result: &quot;+result);</span>
+<span class="nc" id="L209">				textfield1.setText(&quot;&quot;);</span>
+<span class="nc" id="L210">				textfield2.setText(&quot;&quot;);</span>
+<span class="nc" id="L211">			}</span>
+		});
+<span class="nc" id="L213">		btnRemainder.setBounds(228, 230, 117, 25);</span>
+<span class="nc" id="L214">		frmCalculator.getContentPane().add(btnRemainder);</span>
+		
+<span class="nc" id="L216">		JButton btnSquareRoot = new JButton(&quot; √&quot;);</span>
+<span class="nc" id="L217">		btnSquareRoot.addActionListener(new ActionListener() {</span>
+			public void actionPerformed(ActionEvent e) {
+<span class="nc" id="L219">				double firstNumber = Double.parseDouble(textfield1.getText().toString());</span>
+<span class="nc" id="L220">				double result = ca.squareRoot(firstNumber);</span>
+				
+<span class="nc" id="L222">				lblResult.setText(&quot;Result: &quot;+result);</span>
+<span class="nc" id="L223">				textfield1.setText(&quot;&quot;);</span>
+<span class="nc" id="L224">				textfield2.setText(&quot;&quot;);</span>
+<span class="nc" id="L225">			}</span>
+		});	
+<span class="nc" id="L227">		btnSquareRoot.setBounds(228, 267, 117, 25);</span>
+<span class="nc" id="L228">		frmCalculator.getContentPane().add(btnSquareRoot);</span>
+		
+<span class="nc" id="L230">		JButton btnCubeRoot = new JButton(&quot;3√&quot;);</span>
+<span class="nc" id="L231">		btnCubeRoot.addActionListener(new ActionListener() {</span>
+			public void actionPerformed(ActionEvent e) {
+<span class="nc" id="L233">				double firstNumber = Double.parseDouble(textfield1.getText().toString());</span>
+<span class="nc" id="L234">				double result = ca.cubeRoot(firstNumber);</span>
+				
+<span class="nc" id="L236">				lblResult.setText(&quot;Result: &quot;+result);</span>
+<span class="nc" id="L237">				textfield1.setText(&quot;&quot;);</span>
+<span class="nc" id="L238">				textfield2.setText(&quot;&quot;);</span>
+<span class="nc" id="L239">			}</span>
+		});
+<span class="nc" id="L241">		btnCubeRoot.setBounds(228, 304, 117, 25);</span>
+<span class="nc" id="L242">		frmCalculator.getContentPane().add(btnCubeRoot);</span>
+<span class="nc" id="L243">	}</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.7.201606060606</span></div></body></html>
